@@ -1,7 +1,7 @@
 # Horizon v0.1 Roadmap
 
 ### Milestones
-- [ ] 1. Project Foundation
+- [X] 1. Project Foundation
 - [ ] 2. Common Data Model
 - [ ] 3. Data Ingestion
 - [ ] 4. World Model Generation
@@ -15,13 +15,13 @@ Establish the technical architecture, development environment, and project struc
 
 ### Tasks
 - [X] __1.1__ Diagram the system's architecture
-- [ ] __1.2__ Configure the development environment
-  - [ ] __1.2.1__ Initialize the GitLab repo
+- [X] __1.2__ Configure the development environment
+  - [X] __1.2.1__ Initialize the GitLab repo
   - [X] __1.2.2__ Define the project structure
   - [X] __1.2.3__ Identify the toolchain
-  - [ ] __1.2.4__ Configure the toolchain
-- [ ] __1.3__ Implement the application entry point
-- [ ] __1.4__ Document the development setup
+  - [X] __1.2.4__ Configure the toolchain
+- [X] __1.3__ Implement the application entry point
+- [X] __1.4__ Document the development setup
 
 ### Definitions
 
