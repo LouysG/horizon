@@ -1,2 +1,24 @@
-# Ignore .DS_store files
+# macOS
 .DS_Store
+
+# Python virtual environments
+.venv/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# Development tool caches
+.pytest_cache/
+.ruff_cache/
+.ty_cache/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
