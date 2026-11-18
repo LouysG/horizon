@@ -41,8 +41,8 @@ Design and implement the common data model and database infrastructure necessary
 - [X] __2.2__ Design the logical data model
 - [X] __2.3__ Define & document spatial & temporal data conventions
 - [X] __2.4__ Define & document data provenance conventions
-- [ ] __2.5__ Design the physical database schema 
-- [ ] __2.6__ Implement database initialization & schema management
+- [X] __2.5__ Design the physical database schema 
+- [X] __2.6__ Implement database initialization
 - [ ] __2.7__ Implement data access layer
 - [ ] __2.8__ Test data persistence and integrity
 
@@ -52,7 +52,7 @@ Design and implement the common data model and database infrastructure necessary
 - __2.3__ Establish standards for representing geographic coordinates, spatial geometries, elevations, coordinate reference systems, and measurement units. Establish how timestamps, observation times, and temporal validity intervals will be represented.
 - __2.4__ Establish how the system will identify originating data sources, acquisition times, and the provenance of individual records.
 - __2.5__ Translate the logical data model into database tables, columns, relationships, indexes, and integrity constraints.
-- __2.6__ Develop the mechanisms necessary to initialize the database and manage changes to its schema.
+- __2.6__ Develop the mechanisms necessary to initialize the database.
 - __2.7__ Develop reusable operations for creating, retrieving, updating, and deleting records without requiring other application components to interact directly with the database.
 - __2.8__ Develop automated tests verifying database operations, entity relationships, constraint enforcement, and persistence across application restarts.
 
