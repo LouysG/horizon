@@ -7,7 +7,9 @@ authors = [
     { name = "Louys Gackstetter", email = "louys.gackstetter@gmail.com" },
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "duckdb>=2.0.0",
+]
 
 [project.scripts]
 horizon = "horizon.__main__:main"
