@@ -9,7 +9,7 @@
 | Application Coordinate Order | Longitute, Latitude (x, y) |
 | Coordinate Precision | Double Precisions Floating Point (float64) |
 | Spatial Geometries | OGC Simple Features Geometry Types |
-| Geometry Storage | v0.1 GeoPackage; v0.2+ PostGIS geometry type |
+| Geometry Storage | v0.1 DuckDB geometry type; v0.2+ PostGIS geometry type |
 | Elevation | Meters, with explicit vertical reference |
 | Distance | Meters |
 | Area | Square meters |

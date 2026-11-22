@@ -2,7 +2,7 @@
 
 ### Milestones
 - [X] 1. Project Foundation
-- [ ] 2. Common Data Model
+- [X] 2. Common Data Model
 - [ ] 3. Data Ingestion
 - [ ] 4. World Model Generation
 - [ ] 5. World Model Query & Manipulation
@@ -41,10 +41,10 @@ Design and implement the common data model and database infrastructure necessary
 - [X] __2.2__ Design the logical data model
 - [X] __2.3__ Define & document spatial & temporal data conventions
 - [X] __2.4__ Define & document data provenance conventions
-- [ ] __2.5__ Design the physical database schema 
-- [ ] __2.6__ Implement database initialization & schema management
-- [ ] __2.7__ Implement data access layer
-- [ ] __2.8__ Test data persistence and integrity
+- [X] __2.5__ Design the physical database schema 
+- [X] __2.6__ Implement database initialization
+- [X] __2.7__ Implement data access layer
+- [-] __2.8__ Test data persistence and integrity
 
 ### Definitions
 - __2.1__ Identify the entities that will be represented within a Horizon world model.
@@ -52,7 +52,7 @@ Design and implement the common data model and database infrastructure necessary
 - __2.3__ Establish standards for representing geographic coordinates, spatial geometries, elevations, coordinate reference systems, and measurement units. Establish how timestamps, observation times, and temporal validity intervals will be represented.
 - __2.4__ Establish how the system will identify originating data sources, acquisition times, and the provenance of individual records.
 - __2.5__ Translate the logical data model into database tables, columns, relationships, indexes, and integrity constraints.
-- __2.6__ Develop the mechanisms necessary to initialize the database and manage changes to its schema.
+- __2.6__ Develop the mechanisms necessary to initialize the database.
 - __2.7__ Develop reusable operations for creating, retrieving, updating, and deleting records without requiring other application components to interact directly with the database.
 - __2.8__ Develop automated tests verifying database operations, entity relationships, constraint enforcement, and persistence across application restarts.
 
@@ -60,7 +60,7 @@ Design and implement the common data model and database infrastructure necessary
 Develop the mechanisms necessary to integrate heterogeneous geospatial datasets into Horizon's common data model.
 
 ### Tasks
-- [ ] __3.1__ Select initial data sources 
+- [X] __3.1__ Select initial data sources 
 - [ ] __3.2__ Design the ingestion architecture 
 - [ ] __3.3__ Implement data transformation and normalization 
 - [ ] __3.4__ Implement ingestion validation and integrity controls 
