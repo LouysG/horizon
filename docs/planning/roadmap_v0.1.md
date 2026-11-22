@@ -2,7 +2,7 @@
 
 ### Milestones
 - [X] 1. Project Foundation
-- [ ] 2. Common Data Model
+- [X] 2. Common Data Model
 - [ ] 3. Data Ingestion
 - [ ] 4. World Model Generation
 - [ ] 5. World Model Query & Manipulation
@@ -43,8 +43,8 @@ Design and implement the common data model and database infrastructure necessary
 - [X] __2.4__ Define & document data provenance conventions
 - [X] __2.5__ Design the physical database schema 
 - [X] __2.6__ Implement database initialization
-- [ ] __2.7__ Implement data access layer
-- [ ] __2.8__ Test data persistence and integrity
+- [X] __2.7__ Implement data access layer
+- [-] __2.8__ Test data persistence and integrity
 
 ### Definitions
 - __2.1__ Identify the entities that will be represented within a Horizon world model.
@@ -60,7 +60,7 @@ Design and implement the common data model and database infrastructure necessary
 Develop the mechanisms necessary to integrate heterogeneous geospatial datasets into Horizon's common data model.
 
 ### Tasks
-- [ ] __3.1__ Select initial data sources 
+- [X] __3.1__ Select initial data sources 
 - [ ] __3.2__ Design the ingestion architecture 
 - [ ] __3.3__ Implement data transformation and normalization 
 - [ ] __3.4__ Implement ingestion validation and integrity controls 
