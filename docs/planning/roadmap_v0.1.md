@@ -61,10 +61,10 @@ Develop the mechanisms necessary to integrate heterogeneous geospatial datasets 
 
 ### Tasks
 - [X] __3.1__ Select initial data sources 
-- [ ] __3.2__ Design the ingestion architecture 
-- [ ] __3.3__ Implement data transformation and normalization 
-- [ ] __3.4__ Implement ingestion validation and integrity controls 
-- [ ] __3.5__ Implement source-specific ingestion adapters
+- [X] __3.2__ Design the ingestion architecture 
+- [X] __3.3__ Implement data transformation and normalization 
+- [X] __3.4__ Implement ingestion validation and integrity controls 
+- [X] __3.5__ Implement source-specific ingestion adapters
 - [ ] __3.6__ Test data ingestion and integration
 
 ### Definitions

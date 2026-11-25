@@ -13,6 +13,7 @@ CREATE SEQUENCE IF NOT EXISTS airspace_restriction_id_seq;
 CREATE SEQUENCE IF NOT EXISTS controlled_airspace_id_seq;
 CREATE SEQUENCE IF NOT EXISTS aircraft_id_seq;
 CREATE SEQUENCE IF NOT EXISTS weather_sensor_id_seq;
+CREATE SEQUENCE IF NOT EXISTS uas_facility_grid_id_seq;
 
 CREATE TABLE IF NOT EXISTS data_source (
     source_id BIGINT PRIMARY KEY DEFAULT nextval('data_source_id_seq'),
@@ -82,6 +83,22 @@ CREATE TABLE IF NOT EXISTS controlled_airspace (
     geometry GEOMETRY('EPSG:4326') NOT NULL,
     altitude_reference VARCHAR,
     airspace_class VARCHAR,
+    source_id BIGINT NOT NULL REFERENCES data_source (source_id),
+    source_record_id VARCHAR,
+    acquired_at TIMESTAMPTZ NOT NULL,
+    ingestion_id BIGINT NOT NULL,
+    FOREIGN KEY (ingestion_id, source_id) REFERENCES ingestion_run (ingestion_id, source_id)
+);
+
+-- Add cycle bounds to databases initialized before NASR ingestion.
+ALTER TABLE controlled_airspace ADD COLUMN IF NOT EXISTS valid_from TIMESTAMPTZ;
+ALTER TABLE controlled_airspace ADD COLUMN IF NOT EXISTS valid_to TIMESTAMPTZ;
+
+-- Informational FAA UAS Facility Map grids and their heights above ground.
+CREATE TABLE IF NOT EXISTS uas_facility_grid (
+    grid_id BIGINT PRIMARY KEY DEFAULT nextval('uas_facility_grid_id_seq'),
+    geometry GEOMETRY('EPSG:4326') NOT NULL,
+    ceiling_agl_m DOUBLE CHECK (ceiling_agl_m >= 0),
     source_id BIGINT NOT NULL REFERENCES data_source (source_id),
     source_record_id VARCHAR,
     acquired_at TIMESTAMPTZ NOT NULL,
